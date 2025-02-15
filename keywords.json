@@ -1,0 +1,122 @@
+{
+	"Taint-Style": [
+		"sanity",
+		"controlled by user",
+		"malicious device",
+		"malicious user",
+		"user-controlled",
+		"malfunctioning",
+		"malformed",
+		"from user",
+		"user data",
+		"user input"
+	],
+	"Use-After-Free": [
+		"use after free",
+		"use-after-free",
+		"uaf"
+	],
+	"Resource-Leak": [
+		"resource leak",
+		"refcount leak"
+	],
+	"Lock-Misuse": [
+		"lock",
+		"unlock",
+		"deadlock"
+	],
+	"Signedness-Bug": [
+		"sign extension",
+		"sign-extension",
+		"signedness bug",
+		"unsigned comparison"
+	],
+	"Null-Ptr-Deref": [
+		"null ptr",
+		"pointer dereference",
+		"null pointer dereference",
+		"null dereference",
+		"npd",
+		"null pointer",
+		"null-ptr-deref",
+		"null-deref",
+		"null check",
+		" gpf ",
+		"protection fault",
+		"null-pointer",
+		"dereferenced",
+		"handle kernel paging request"
+	],
+	"UnInitialization": [
+		"uninitialize",
+		"uninit-value",
+		"ununit-value",
+		"uninit value",
+		"initialized"
+	],
+	"Integer-Flow": [
+		"integer overflow",
+		"integer underflow",
+		"index underflow",
+		"shift_out_of_bounds"
+	],
+	"Out-of-bound": [
+		"out of bound",
+		"oob",
+		"out-of-bound",
+		"overflow",
+		"handle page fault"
+	],
+	"Divide-by-zero": [
+		"divide by zero",
+		"zero divide",
+		"divide",
+		"zero",
+		"division",
+		"divide error",
+		"zero out"
+	],
+	"Double-free": [
+		"double free",
+		"double-free"
+	],
+	"Memory-Leak": [
+		"mem leak",
+		"memleak",
+		"memory leak",
+		"ref count",
+		"refcount",
+		"refcnt leak",
+		"unbalanced",
+		"imbalance",
+		"leak",
+		"fix missing ()",
+		"add missing ()"
+	],
+	"Memory-Corruption": [
+		"memory corruption"
+	],
+	"Wrong-Error-Code": [
+		"error code",
+		"wrong return value",
+		"error return code",
+		"incorrect return value",
+		"fix return value",
+		"return value check",
+		"fix error code"
+	],
+	"Error-Handling": [
+		"unchecked return",
+		"error handle",
+		"error handl",
+		"check return",
+		"check for return value",
+		"check for error",
+		"error handling",
+		"error path",
+		"error check",
+		"error return",
+		"return value",
+		"handle error"
+	]
+}

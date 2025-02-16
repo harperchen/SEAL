@@ -139,11 +139,11 @@ cd /seal-workdir/test/39244cc
 
 We showcase another null-ptr-deref bug in interface `struct vb2_ops::buf_prepare` that results from the wrong error code. The bug is triggered since the failure of APi `dma_alloc_coherent` is not conveyed to the invoker via the return value of the interface.
 SEAL generates a reachability relation from the error code `-12` to the return value of the indirect call, under the condition the return of API `dma_alloc_coherent` is NULL.
-The content of generated specification in csv file `/seal-workdir/test/2b064d9/specs.csv` is shown below.
+The content of the generated specification in csv file `/seal-workdir/test/2b064d9/specs.csv` is shown below.
  
 ```
 Spec Type,Indirect Call,Spec Input,Spec Output,Spec Cond SMT,Spec Orders
-Src Must Reach Sinkafter.patch.buffer_prepare,Error code: -12 Caused by Input Node: Return of API: after.patch.dma_alloc_coherent#-1,Return of indirect call: drivers/media/pci/cx88/cx88-vbi.c:after.patch.buffer_prepare,/seal-workdir/test/2b064d9/spec_smt_0.smt,,
+Src Must Reach Sink,after.patch.buffer_prepare,Error code: -12 Caused by Input Node: Return of API: after.patch.dma_alloc_coherent#-1,Return of indirect call: drivers/media/pci/cx88/cx88-vbi.c:after.patch.buffer_prepare,/seal-workdir/test/2b064d9/spec_smt_0.smt,,
 ```
 
 ## Batch Testing
@@ -219,4 +219,4 @@ python3 helper_scripts/50_bug_detector.py
 - `config.py` details the location of all intermediate data.
 
 ## Acknowledgement
-We appreciate the underlying value-flow analysis engine Clearblue@HKUST. Please refer to the [offcial page](https://www.clearblueinnovations.org/) to gain more information about the powerful tool, and learn how to [customize your bug checkers](https://www.clearblueinnovations.org/docs/4-develop-examples/vulnerability_detection/) and achieve [other program analysis tasks](https://www.clearblueinnovations.org/docs/4-develop-examples/generate_program_query/)!
+We appreciate the underlying value-flow analysis engine Clearblue@HKUST. Please refer to the [offcial page](https://www.clearblueinnovations.org/) and [published papers](https://www.clearblueinnovations.org/docs/7-papers/) to gain more information about the powerful tool. You can learn how to [customize your bug checkers](https://www.clearblueinnovations.org/docs/4-develop-examples/vulnerability_detection/) and achieve [other program analysis tasks](https://www.clearblueinnovations.org/docs/4-develop-examples/generate_program_query/)!

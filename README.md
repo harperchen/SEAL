@@ -28,7 +28,7 @@ docker run -it --name "seal-latest" seal-latest
 
 ## Installation Instructions
 
-SEAL is developed on the basis of [LLVM 3.2](https://releases.llvm.org/3.2/docs/index.html) and [Clearblue](https://www.clearblueinnovations.org/) static analysis engine. Compiling our code would generate a shared object (`libSEGPatchPlugin.so`).
+SEAL is developed on the basis of [LLVM 3.6.2](https://releases.llvm.org/3.6.2/docs/ReleaseNotes.html) and [Clearblue](https://www.clearblueinnovations.org/) static analysis engine. Compiling our code would generate a shared object (`libSEGPatchPlugin.so`).
 
 We have involved the necessary headers and libraries of LLVM and Clearblue in `/llvm` and `/clearblue` directories inside the docker image. The compilation process could be conducted with the following commands.
 

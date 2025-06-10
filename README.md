@@ -19,7 +19,7 @@ SEAL
 ```
 
 ## Docker Environment
-The environment for the compilation and execution of SEAL,.l has been set up in the docker image.
+The environment for the compilation and execution of SEAL, has been set up in the docker image.
 
 ```
 docker pull harperchen1110/seal-latest:1.0
